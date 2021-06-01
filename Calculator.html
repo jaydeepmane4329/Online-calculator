@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Meta tags for Responsive purpose -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Meta decription for page -->
+    <meta name="description" content="Calculator Using Html-Css">
+    <!-- linked stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- This is the title for Project -->
+    <title>Calculator</title>
+</head>
+<body>
+    <!-- Heading of  project -->
+    <h1>Calculator Using Html & Css</h1>
+    <div class="container">
+        <!-- form  start here-->
+    <form name="form1" class="cal"  action="Calculator.html" method="POST" >
+        <!-- Text area   -->
+<input type="text" name="answer" id="screen">
+    <br>
+    <!--  ALL Buttons of calculator -->
+<input type="button" class="btnlook" value="CE" onclick="form1.answer.value=''">
+<!-- Special id defined here for button="correct" -->
+<input type="button" id="correct" class="btnlook" value="CORRECT" onclick="form1.answer.value=form1.answer.value.substring(0,form1.answer.value.length*1-1)">
+<input type="button" class="OPratorlook" value="/" onclick="form1.answer.value+='/'">
+    <br>
+<input type="button" class="btnlook" value="7" onclick="form1.answer.value+='7'">
+<input type="button" class="btnlook" value="8" onclick="form1.answer.value+='8'">
+<input type="button" class="btnlook" value="9" onclick="form1.answer.value+='9'">
+<input type="button" class="OPratorlook" value="*" onclick="form1.answer.value+='*'">
+    <br>
+<input type="button" class="btnlook" value="4" onclick="form1.answer.value+='4'">
+<input type="button" class="btnlook" value="5" onclick="form1.answer.value+='5'">
+<input type="button" class="btnlook" value="6" onclick="form1.answer.value+='6'">
+<input type="button" class="OPratorlook" value="-" onclick="form1.answer.value+='-'">
+    <br>
+<input type="button" class="btnlook" value="1" onclick="form1.answer.value+='1'">
+<input type="button" class="btnlook" value="2" onclick="form1.answer.value+='2'">
+<input type="button" class="btnlook" value="3" onclick="form1.answer.value+='3'">
+<!-- special id included for plus Oprator -->
+<input type="button" id="plus" class="OPratorlook" value="+" onclick="form1.answer.value+='+'">
+    <br>
+<input type="button" class="btnlook" value="00" onclick="form1.answer.value+='00'">
+<input type="button" class="btnlook" value="0" onclick="form1.answer.value+='0'">
+<input type="button" class="btnlook" value="=" onclick="form1.answer.value=eval(form1.answer.value)">
+
+</form>
+<!-- Form end here -->
+</div>
+</body>
+</html>
